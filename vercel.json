@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/bomb.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/bomb", "dest": "/api/bomb.js" },
+    { "src": "/", "dest": "/api/bomb.js" }
+  ]
+}
